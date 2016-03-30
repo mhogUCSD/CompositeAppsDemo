@@ -3,6 +3,9 @@ package employee;
 public class Employee extends Staff {
 	private String supervisor;
 	
+	public Employee(){
+	}
+	
 	public Employee(int id, String name, String phone, String supervisor) {
 		super(id, name, phone);
 		this.supervisor = supervisor;

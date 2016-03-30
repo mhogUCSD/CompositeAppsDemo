@@ -21,4 +21,9 @@ public class DBConnection extends Connection {
 		return super.con.query(query);
 	}
 
+	@Override
+	public void disconnect() {
+		super.con.disconnect();
+	}
+
 }

@@ -14,6 +14,7 @@ public abstract class Connection {
 		this.con = c;
 	}
 	public abstract boolean connect(String user, String pass);
+	public abstract void disconnect();
 	public abstract boolean getIsConnected();
 	public abstract ResultSet query(String query);
 }

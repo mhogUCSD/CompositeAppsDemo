@@ -1,9 +1,13 @@
 package employee;
 
-public abstract class Staff {
+import java.io.Serializable;
+
+public abstract class Staff implements Serializable{
 	protected int id;
 	protected String name;
 	protected String phone; 
+	
+	public Staff(){}
 	
 	public Staff(int id, String name, String phone){
 		this.id = id;

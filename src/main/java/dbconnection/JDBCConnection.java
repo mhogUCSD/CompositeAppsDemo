@@ -78,5 +78,18 @@ public class JDBCConnection implements ConnectionIntr {
 		}
 		return null;
 	}
+	
+	
+	// close the connection
+	public void disconnect() {
+		try {
+			this.st.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		this.isConnected = false;
+	}
 
 }
